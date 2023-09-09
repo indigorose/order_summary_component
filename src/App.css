@@ -45,6 +45,25 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 }
+
+.music-note {
+	width: 15%;
+	height: 15%;
+	margin: auto 0;
+}
+
+.price {
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.change-btn {
+	outline: none;
+	margin: auto 0;
+}
+
 .payment-btn {
 	background-color: var(--color-2);
 	color: var(--color-3);
