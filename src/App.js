@@ -15,7 +15,7 @@ function App() {
 					<h1>Order Summary</h1>
 					<p className="order-text">
 						You can now listen to millions of songs, audiobooks, and
-						podcasts on any device anywhere you like.
+						podcasts on any device anywhere you like!
 					</p>
 				</div>
 				<div className="card-price">

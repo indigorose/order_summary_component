@@ -8,16 +8,27 @@
 	--color-3: hsl(225, 100%, 98%);
 	--color-4: hsl(224, 23%, 55%);
 	--color-5: hsl(223, 47%, 23%);
+	--color-6: hsl(261, 27%, 32%);
+	--color-7: hsl(225, 40%, 98%);
+	--color-8: hsl(260, 76%, 59%);
+}
+
+body {
+	background-image: url(./assets/images/pattern-background-mobile.svg);
 }
 
 .container {
-	width: 80%;
-	border: 1px solid black;
-	border-radius: 5px;
+	width: 300px;
+	/* border: 1px solid black; */
+	border-radius: 10px;
 	overflow: hidden;
-	margin: 0 auto;
+	margin: 2em auto;
 	display: flex;
 	flex-direction: column;
+	background-color: white;
+	box-shadow:
+		rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .icon-image {
@@ -25,22 +36,27 @@
 	height: 100%;
 }
 .card-summary {
-	border: 1px solid green;
+	/* border: 1px solid green; */
+	margin: 1em auto;
+	width: 85%;
 }
 
 .card-summary > h1 {
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 700;
 }
 
 .card-summary > p {
 	text-align: center;
 	color: var(--color-4);
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+	padding: 0 1.7em;
 }
 
 .card-price {
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 	border-radius: 5px;
 	overflow: hidden;
 	display: flex;
@@ -48,8 +64,8 @@
 	justify-content: space-evenly;
 	padding: 0;
 	margin: 0 auto;
-	background-color: var(--color-3);
-	width: 80%;
+	background-color: var(--color-7);
+	width: 85%;
 }
 
 .music-note {
@@ -65,11 +81,12 @@
 
 .price > li {
 	list-style-type: none;
-	padding: 0;
+	padding: 0 1.5em;
+	margin: 0 auto;
 }
 .price > li:first-child {
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 .price > li:last-child {
@@ -82,9 +99,18 @@
 	outline: none;
 	border: none;
 	margin: auto 0;
-	background-color: var(--color-3);
-	color: var(--color-5);
+	background-color: transparent;
+	color: var(--color-6);
+	font-weight: 600;
+	font-size: 0.8rem;
 	text-decoration: underline;
+	cursor: pointer;
+}
+
+.change-btn:hover,
+.change-btn:focus {
+	color: var(--color-8);
+	text-decoration: none;
 }
 
 .payment-btn {
@@ -92,12 +118,22 @@
 	color: var(--color-3);
 	outline: none;
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
+	overflow: hidden;
 	width: 85%;
 	margin: 1.5em auto;
-	padding: 0.5em 2em;
+	padding: 1em 2em;
 	font-size: 0.8rem;
 	font-weight: 700;
+	box-shadow:
+		rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	cursor: pointer;
+}
+
+.payment-btn:hover,
+.payment-btn:focus {
+	background-color: var(--color-8);
 }
 
 .cancel-btn {
@@ -105,7 +141,31 @@
 	border: none;
 	width: 60%;
 	margin: 0 auto 1.5em;
-	background-color: white;
-	color: var(--color-4);
+	background-color: transparent;
+	color: rgb(126, 126, 126);
 	font-weight: 700;
+	cursor: pointer;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus {
+	color: black;
+}
+
+@media (min-width: 750px) {
+	body {
+		background-image: url(./assets/images/pattern-background-desktop.svg);
+	}
+
+	.container {
+		width: 350px;
+	}
+	.card-price {
+		width: 70%;
+		padding: 0 1em;
+	}
+	.payment-btn {
+		width: 80%;
+		padding: 1em 2em;
+	}
 }
