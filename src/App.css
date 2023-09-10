@@ -11,7 +11,7 @@
 }
 
 .container {
-	width: 70%;
+	width: 80%;
 	border: 1px solid black;
 	border-radius: 5px;
 	overflow: hidden;
@@ -41,9 +41,15 @@
 
 .card-price {
 	border: 1px solid blue;
+	border-radius: 5px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	padding: 0;
+	margin: 0 auto;
+	background-color: var(--color-3);
+	width: 80%;
 }
 
 .music-note {
@@ -54,14 +60,31 @@
 
 .price {
 	font-size: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	padding: 0;
+}
+
+.price > li {
+	list-style-type: none;
+	padding: 0;
+}
+.price > li:first-child {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.price > li:last-child {
+	font-weight: 400;
+	color: var(--color-4);
+	font-size: 0.8rem;
 }
 
 .change-btn {
 	outline: none;
+	border: none;
 	margin: auto 0;
+	background-color: var(--color-3);
+	color: var(--color-5);
+	text-decoration: underline;
 }
 
 .payment-btn {
@@ -69,15 +92,19 @@
 	color: var(--color-3);
 	outline: none;
 	border: none;
-	width: 60%;
-	margin: 0 auto;
+	border-radius: 5px;
+	width: 85%;
+	margin: 1.5em auto;
+	padding: 0.5em 2em;
+	font-size: 0.8rem;
+	font-weight: 700;
 }
 
 .cancel-btn {
 	outline: none;
 	border: none;
 	width: 60%;
-	margin: 0 auto;
+	margin: 0 auto 1.5em;
 	background-color: white;
 	color: var(--color-4);
 	font-weight: 700;

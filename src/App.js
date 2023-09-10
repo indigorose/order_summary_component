@@ -20,10 +20,10 @@ function App() {
 				</div>
 				<div className="card-price">
 					<img src={icon} alt="musical note" className="music-note" />
-					<div className="price">
-						<h4>Annual Plan</h4>
-						<h4>$59.99/year</h4>
-					</div>
+					<ul className="price">
+						<li>Annual Plan</li>
+						<li>$59.99/year</li>
+					</ul>
 
 					<button className="change-btn">Change</button>
 				</div>
