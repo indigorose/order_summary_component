@@ -5,7 +5,7 @@ import heroImage from './assets/images/illustration-hero.svg';
 function App() {
 	return (
 		<div className="App">
-			<div className="container">
+			<div className="container" role="main contentinfo">
 				<img
 					src={heroImage}
 					alt="Girl with headphones"
@@ -30,6 +30,19 @@ function App() {
 				<button className="payment-btn">Proceed to Payment</button>
 				<button className="cancel-btn">Cancel Order</button>
 			</div>
+
+			<footer role="contentinfo" className="attribution">
+				Challenge by{' '}
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Frontend Mentor
+				</a>
+				. Coded by{' '}
+				<a href="https://github.com/indigorose">Karen Robertson</a>.
+			</footer>
 		</div>
 	);
 }
